@@ -1,0 +1,260 @@
+:root {
+    --page-color: #0d1520;
+    --header-color: #ff5c01;
+    --text-color: #dce1e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--page-color);
+    color: var(--text-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    align-items: center;
+    border-bottom: 2px solid var(--page-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--page-color);
+    padding: 5px 10px;
+}
+
+a:hover {
+    background-color: var(--page-color);
+    color: var(--text-color);
+    border-radius: 20px;
+}
+
+main {
+    padding-top: 80px;
+    margin: 0 10px;
+}
+
+.nav-link {
+    margin: 0 30px;
+}
+
+.form-section {
+    text-align: center;
+}
+
+#email {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+#submit {
+    margin-top: 13px;
+    padding: 7px 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: var(--header-color);
+    border: none;
+    border-radius: 30px;
+}
+
+.explainer {
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.explainer-section {
+    display: flex;
+    margin: 15px 0;
+}
+
+.explainer-text {
+    display: block;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.explainer-paragraph {
+    margin-top: 5px;
+}
+
+.explainer-icon {
+    width: 8vw;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 30px;
+    border: 2px solid var(--text-color);
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 125px;
+    margin-top: 80px;
+}
+
+.boot-img {
+    width: 20vw;
+    padding-right: 25px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.description {
+    text-align: justify;
+}
+
+.buy-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    background-color: var(--header-color);
+    color: var(--page-color);
+    border-radius: 30px;
+}
+
+.boot-info {
+    padding-left: 15px;
+}
+
+.boot-container {
+    border: 2px solid var(--text-color);
+    padding: 0 25px 10px 10px;
+    border-radius: 40px;
+    width: 273.5px;
+}
+
+.name-price {
+    background-color: var(--header-color);
+    color: var(--page-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 270px;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+}
+
+.boot-rarity, .price {
+    margin: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+    background-color: var(--text-color);
+    color: var(--page-color);
+    padding-left: none;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+footer p {
+    padding-left: none;
+    text-align: right;
+    margin-top: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width:1100px) {
+    #video {
+        width: 500px;
+        height: 300px;
+    }
+    .explainer-icon {
+        height: 110px;
+        width: 110px;
+    }
+    footer {
+        margin-left: 450px;
+    }
+    .boot-container {
+        width: 200px;
+        margin: 0 5px;
+    }
+    .boot-rarity, .price, .description {
+        font-size: 10px;
+    }
+    .name-price {
+        width: 196px;
+    }
+    .boot-img {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 700px;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    a {
+        padding: 0;
+    }
+    .nav-link {
+        margin: 0 10px 0 0;
+    }
+    .explainer-icon {
+        height: 100px;
+        width: 100px;
+    }
+    #video {
+        width: 450px;
+    }
+    footer {
+        margin-left: 400px;
+    }
+    .boot-container {
+        width: 150px;
+        margin: 0 5px;
+    }
+    .boot-rarity, .price, .description {
+        font-size: 10px;
+    }
+    .name-price {
+        width: 146px;
+    }
+    .boot-img {
+        width: 120px;
+    }
+}
